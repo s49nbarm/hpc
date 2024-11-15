@@ -1,0 +1,14 @@
+- Which compiler optimization levels use scalar instructions?
+O0, O1, O2, O3
+
+- Which compiler optimization levels use packed vector instructions?
+O0, O1, O2, O3
+
+- Which compiler optimization levels use 32-bit registers?
+O0, O1, O2, O3
+
+- Which compiler optimization levels use 128-bit registers?
+O0, O1, O2, O3
+
+- Which compiler optimization levels use 256-bit registers?
+None

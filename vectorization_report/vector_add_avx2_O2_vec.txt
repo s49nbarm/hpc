@@ -1,0 +1,73 @@
+vector_addition_avx2.c:9:23: missed: couldn't vectorize loop
+vector_addition_avx2.c:10:23: missed: statement clobbers memory: _1 = rand ();
+vector_addition_avx2.c:8:6: note: vectorized 0 loops in function.
+vector_addition_avx2.c:10:23: missed: statement clobbers memory: _1 = rand ();
+vector_addition_avx2.c:11:23: missed: statement clobbers memory: _7 = rand ();
+vector_addition_avx2.c:14:1: note: ***** Analysis failed with vector mode V8SF
+vector_addition_avx2.c:14:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+vector_addition_avx2.c:18:23: missed: couldn't vectorize loop
+vector_addition_avx2.c:19:24: missed: statement clobbers memory: _1 = rand ();
+vector_addition_avx2.c:17:6: note: vectorized 0 loops in function.
+vector_addition_avx2.c:19:24: missed: statement clobbers memory: _1 = rand ();
+vector_addition_avx2.c:20:24: missed: statement clobbers memory: _7 = rand ();
+vector_addition_avx2.c:23:1: note: ***** Analysis failed with vector mode V4DF
+vector_addition_avx2.c:23:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DF
+vector_addition_avx2.c:37:14: missed: couldn't vectorize loop
+vector_addition_avx2.c:39:17: missed: not vectorized: no vectype for stmt: _10 = *_9;
+ scalar_type: float
+vector_addition_avx2.c:29:19: missed: couldn't vectorize loop
+/p/software/fs/jurecadc/stages/2024/software/GCCcore/12.3.0/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include/avxintrin.h:905:10: missed: not vectorized: no vectype for stmt: _26 = MEM[(__m256_u * {ref-all})_3];
+ scalar_type: __m256_u
+vector_addition_avx2.c:26:6: note: vectorized 0 loops in function.
+vector_addition_avx2.c:41:1: note: ***** Analysis failed with vector mode V8SF
+vector_addition_avx2.c:41:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+vector_addition_avx2.c:55:14: missed: couldn't vectorize loop
+vector_addition_avx2.c:57:17: missed: not vectorized: no vectype for stmt: _10 = *_9;
+ scalar_type: double
+vector_addition_avx2.c:47:19: missed: couldn't vectorize loop
+/p/software/fs/jurecadc/stages/2024/software/GCCcore/12.3.0/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include/avxintrin.h:893:10: missed: not vectorized: no vectype for stmt: _26 = MEM[(__m256d_u * {ref-all})_3];
+ scalar_type: __m256d_u
+vector_addition_avx2.c:44:6: note: vectorized 0 loops in function.
+vector_addition_avx2.c:59:1: note: ***** Analysis failed with vector mode V4DF
+vector_addition_avx2.c:59:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DF
+vector_addition_avx2.c:63:13: missed: statement clobbers memory: start_5 = clock ();
+vector_addition_avx2.c:64:5: missed: statement clobbers memory: func_6(D) (a_7(D), b_8(D), c_9(D), size_10(D));
+vector_addition_avx2.c:65:11: missed: statement clobbers memory: end_13 = clock ();
+vector_addition_avx2.c:66:34: note: ***** Analysis failed with vector mode VOID
+vector_addition_avx2.c:63:13: missed: statement clobbers memory: start_9 = clock ();
+vector_addition_avx2.c:64:5: missed: statement clobbers memory: func_2(D) (a_3(D), b_4(D), c_5(D), size_6(D));
+vector_addition_avx2.c:65:11: missed: statement clobbers memory: end_10 = clock ();
+vector_addition_avx2.c:66:34: note: ***** Analysis failed with vector mode VOID
+vector_addition_avx2.c:86:39: missed: couldn't vectorize loop
+vector_addition_avx2.c:86:39: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+vector_addition_avx2.c:18:23: missed: couldn't vectorize loop
+vector_addition_avx2.c:19:24: missed: statement clobbers memory: _45 = rand ();
+vector_addition_avx2.c:9:23: missed: couldn't vectorize loop
+vector_addition_avx2.c:10:23: missed: statement clobbers memory: _58 = rand ();
+vector_addition_avx2.c:78:5: note: vectorized 0 loops in function.
+vector_addition_avx2.c:83:5: missed: statement clobbers memory: printf ("%-10s %-10s %-30s %-30s\n", "Serial No.", "Size", "AVX2 time (float)", "AVX2 time (double)");
+vector_addition_avx2.c:90:28: missed: statement clobbers memory: a_10 = malloc (_2);
+vector_addition_avx2.c:91:28: missed: statement clobbers memory: b_12 = malloc (_2);
+vector_addition_avx2.c:92:28: missed: statement clobbers memory: c_14 = malloc (_2);
+vector_addition_avx2.c:95:37: missed: statement clobbers memory: a_double_16 = malloc (_3);
+vector_addition_avx2.c:96:37: missed: statement clobbers memory: b_double_18 = malloc (_3);
+vector_addition_avx2.c:97:37: missed: statement clobbers memory: c_double_20 = malloc (_3);
+vector_addition_avx2.c:10:23: missed: statement clobbers memory: _58 = rand ();
+vector_addition_avx2.c:11:23: missed: statement clobbers memory: _65 = rand ();
+vector_addition_avx2.c:19:24: missed: statement clobbers memory: _45 = rand ();
+vector_addition_avx2.c:20:24: missed: statement clobbers memory: _52 = rand ();
+vector_addition_avx2.c:63:13: missed: statement clobbers memory: start_40 = clock ();
+vector_addition_avx2.c:64:5: missed: statement clobbers memory: vector_add_avx2 (a_10, b_12, c_14, size_8);
+vector_addition_avx2.c:65:11: missed: statement clobbers memory: end_41 = clock ();
+vector_addition_avx2.c:63:13: missed: statement clobbers memory: start_35 = clock ();
+vector_addition_avx2.c:64:5: missed: statement clobbers memory: vector_add_avx2_double (a_double_16, b_double_18, c_double_20, size_8);
+vector_addition_avx2.c:65:11: missed: statement clobbers memory: end_36 = clock ();
+vector_addition_avx2.c:110:9: missed: statement clobbers memory: printf ("%-10d %-10d %-30f %-30f\n", fudgefactor_23, size_8, _44, _39);
+vector_addition_avx2.c:114:9: missed: statement clobbers memory: free (a_10);
+vector_addition_avx2.c:115:9: missed: statement clobbers memory: free (b_12);
+vector_addition_avx2.c:116:9: missed: statement clobbers memory: free (c_14);
+vector_addition_avx2.c:117:9: missed: statement clobbers memory: free (a_double_16);
+vector_addition_avx2.c:118:9: missed: statement clobbers memory: free (b_double_18);
+vector_addition_avx2.c:119:9: missed: statement clobbers memory: free (c_double_20);
+vector_addition_avx2.c:86:39: note: ***** Analysis failed with vector mode V8SF
+vector_addition_avx2.c:86:39: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF

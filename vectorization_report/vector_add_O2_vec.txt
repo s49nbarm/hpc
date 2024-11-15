@@ -1,0 +1,69 @@
+vector_addition.c:8:23: missed: couldn't vectorize loop
+vector_addition.c:9:23: missed: statement clobbers memory: _1 = rand ();
+vector_addition.c:7:6: note: vectorized 0 loops in function.
+vector_addition.c:9:23: missed: statement clobbers memory: _1 = rand ();
+vector_addition.c:10:23: missed: statement clobbers memory: _7 = rand ();
+vector_addition.c:13:1: note: ***** Analysis failed with vector mode V4SF
+vector_addition.c:13:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SF
+vector_addition.c:17:23: missed: couldn't vectorize loop
+vector_addition.c:18:24: missed: statement clobbers memory: _1 = rand ();
+vector_addition.c:16:6: note: vectorized 0 loops in function.
+vector_addition.c:18:24: missed: statement clobbers memory: _1 = rand ();
+vector_addition.c:19:24: missed: statement clobbers memory: _7 = rand ();
+vector_addition.c:22:1: note: ***** Analysis failed with vector mode V2DF
+vector_addition.c:22:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DF
+vector_addition.c:26:23: missed: couldn't vectorize loop
+vector_addition.c:27:17: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: float
+vector_addition.c:25:6: note: vectorized 0 loops in function.
+vector_addition.c:29:1: note: ***** Analysis failed with vector mode V4SF
+vector_addition.c:29:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SF
+vector_addition.c:33:23: missed: couldn't vectorize loop
+vector_addition.c:34:17: missed: not vectorized: no vectype for stmt: _4 = *_3;
+ scalar_type: double
+vector_addition.c:32:6: note: vectorized 0 loops in function.
+vector_addition.c:36:1: note: ***** Analysis failed with vector mode V2DF
+vector_addition.c:36:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DF
+vector_addition.c:41:13: missed: statement clobbers memory: start_5 = clock ();
+vector_addition.c:42:5: missed: statement clobbers memory: func_6(D) (a_7(D), b_8(D), c_9(D), size_10(D));
+vector_addition.c:43:11: missed: statement clobbers memory: end_13 = clock ();
+vector_addition.c:44:34: note: ***** Analysis failed with vector mode VOID
+vector_addition.c:41:13: missed: statement clobbers memory: start_9 = clock ();
+vector_addition.c:42:5: missed: statement clobbers memory: func_2(D) (a_3(D), b_4(D), c_5(D), size_6(D));
+vector_addition.c:43:11: missed: statement clobbers memory: end_10 = clock ();
+vector_addition.c:44:34: note: ***** Analysis failed with vector mode VOID
+vector_addition.c:63:39: missed: couldn't vectorize loop
+vector_addition.c:63:39: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+vector_addition.c:33:23: missed: couldn't vectorize loop
+vector_addition.c:34:17: missed: not vectorized: no vectype for stmt: _85 = *_84;
+ scalar_type: double
+vector_addition.c:26:23: optimized: loop vectorized using 16 byte vectors
+vector_addition.c:17:23: missed: couldn't vectorize loop
+vector_addition.c:18:24: missed: statement clobbers memory: _45 = rand ();
+vector_addition.c:8:23: missed: couldn't vectorize loop
+vector_addition.c:9:23: missed: statement clobbers memory: _58 = rand ();
+vector_addition.c:56:5: note: vectorized 1 loops in function.
+vector_addition.c:61:5: missed: statement clobbers memory: printf ("%-10s %-10s %-30s %-30s\n", "Serial No.", "Size", "Plain loop time (float)", "Plain loop time (double)");
+vector_addition.c:67:28: missed: statement clobbers memory: a_10 = malloc (_2);
+vector_addition.c:68:28: missed: statement clobbers memory: b_12 = malloc (_2);
+vector_addition.c:69:28: missed: statement clobbers memory: c_14 = malloc (_2);
+vector_addition.c:72:37: missed: statement clobbers memory: a_double_16 = malloc (_3);
+vector_addition.c:73:37: missed: statement clobbers memory: b_double_18 = malloc (_3);
+vector_addition.c:74:37: missed: statement clobbers memory: c_double_20 = malloc (_3);
+vector_addition.c:9:23: missed: statement clobbers memory: _58 = rand ();
+vector_addition.c:10:23: missed: statement clobbers memory: _65 = rand ();
+vector_addition.c:18:24: missed: statement clobbers memory: _45 = rand ();
+vector_addition.c:19:24: missed: statement clobbers memory: _52 = rand ();
+vector_addition.c:41:13: missed: statement clobbers memory: start_40 = clock ();
+vector_addition.c:43:11: missed: statement clobbers memory: end_41 = clock ();
+vector_addition.c:41:13: missed: statement clobbers memory: start_35 = clock ();
+vector_addition.c:43:11: missed: statement clobbers memory: end_36 = clock ();
+vector_addition.c:87:9: missed: statement clobbers memory: printf ("%-10d %-10d %-30f %-30f\n", fudgefactor_115, size_8, _44, _39);
+vector_addition.c:90:9: missed: statement clobbers memory: free (a_10);
+vector_addition.c:91:9: missed: statement clobbers memory: free (b_12);
+vector_addition.c:92:9: missed: statement clobbers memory: free (c_14);
+vector_addition.c:93:9: missed: statement clobbers memory: free (a_double_16);
+vector_addition.c:94:9: missed: statement clobbers memory: free (b_double_18);
+vector_addition.c:95:9: missed: statement clobbers memory: free (c_double_20);
+vector_addition.c:63:39: note: ***** Analysis failed with vector mode V4SF
+vector_addition.c:63:39: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SF

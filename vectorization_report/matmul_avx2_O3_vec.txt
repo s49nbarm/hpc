@@ -1,0 +1,79 @@
+matmul_avx2.c:8:23: missed: couldn't vectorize loop
+matmul_avx2.c:9:28: missed: statement clobbers memory: _1 = rand ();
+matmul_avx2.c:6:6: note: vectorized 0 loops in function.
+matmul_avx2.c:9:28: missed: statement clobbers memory: _1 = rand ();
+matmul_avx2.c:11:1: note: ***** Analysis failed with vector mode V8SF
+matmul_avx2.c:11:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+matmul_avx2.c:15:23: missed: couldn't vectorize loop
+matmul_avx2.c:15:23: missed: not vectorized: multiple nested loops.
+matmul_avx2.c:16:27: missed: couldn't vectorize loop
+/p/software/fs/jurecadc/stages/2024/software/GCCcore/12.3.0/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include/avxintrin.h:905:10: missed: not vectorized: no vectype for stmt: _39 = MEM[(__m256_u * {ref-all})_5];
+ scalar_type: __m256_u
+matmul_avx2.c:18:31: missed: couldn't vectorize loop
+/p/software/fs/jurecadc/stages/2024/software/GCCcore/12.3.0/lib/gcc/x86_64-pc-linux-gnu/12.3.0/include/avxintrin.h:905:10: missed: not vectorized: no vectype for stmt: _39 = MEM[(__m256_u * {ref-all})_5];
+ scalar_type: __m256_u
+matmul_avx2.c:13:6: note: vectorized 0 loops in function.
+matmul_avx2.c:40:1: note: ***** Analysis failed with vector mode V8SF
+matmul_avx2.c:40:1: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+matmul_avx2.c:45:13: missed: statement clobbers memory: start_5 = clock ();
+matmul_avx2.c:46:5: missed: statement clobbers memory: func_6(D) (A_7(D), B_8(D), C_9(D), size_10(D));
+matmul_avx2.c:47:11: missed: statement clobbers memory: end_13 = clock ();
+matmul_avx2.c:48:34: note: ***** Analysis failed with vector mode VOID
+matmul_avx2.c:57:23: missed: couldn't vectorize loop
+matmul_avx2.c:57:23: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+matmul_avx2.c:8:23: missed: couldn't vectorize loop
+matmul_avx2.c:9:28: missed: statement clobbers memory: _34 = rand ();
+matmul_avx2.c:8:23: missed: couldn't vectorize loop
+matmul_avx2.c:9:28: missed: statement clobbers memory: _43 = rand ();
+matmul_avx2.c:51:5: note: vectorized 0 loops in function.
+matmul_avx2.c:55:5: missed: statement clobbers memory: printf ("%-10s %-30s\n", "Size", "AVX2 Time (seconds)");
+matmul_avx2.c:61:28: missed: statement clobbers memory: A_15 = malloc (_3);
+matmul_avx2.c:62:28: missed: statement clobbers memory: B_17 = malloc (_3);
+matmul_avx2.c:63:28: missed: statement clobbers memory: C_19 = malloc (_3);
+matmul_avx2.c:9:28: missed: statement clobbers memory: _43 = rand ();
+matmul_avx2.c:9:28: missed: statement clobbers memory: _34 = rand ();
+matmul_avx2.c:45:13: missed: statement clobbers memory: start_29 = clock ();
+matmul_avx2.c:46:5: missed: statement clobbers memory: matrix_multiply_avx2 (A_15, B_17, C_19, size_13);
+matmul_avx2.c:47:11: missed: statement clobbers memory: end_30 = clock ();
+matmul_avx2.c:74:9: missed: statement clobbers memory: printf ("%-10d %-30f\n", size_13, _33);
+matmul_avx2.c:77:9: missed: statement clobbers memory: free (A_15);
+matmul_avx2.c:78:9: missed: statement clobbers memory: free (B_17);
+matmul_avx2.c:79:9: missed: statement clobbers memory: free (C_19);
+matmul_avx2.c:52:9: note: ***** Analysis succeeded with vector mode V8SI
+matmul_avx2.c:52:9: note: SLPing BB part
+matmul_avx2.c:52:9: note: Costing subgraph: 
+matmul_avx2.c:52:9: note: node 0x7c93f18 (max_nunits=4, refcnt=1) vector(4) int
+matmul_avx2.c:52:9: note: op template: sizes[0] = 128;
+matmul_avx2.c:52:9: note: 	stmt 0 sizes[0] = 128;
+matmul_avx2.c:52:9: note: 	stmt 1 sizes[1] = 256;
+matmul_avx2.c:52:9: note: 	stmt 2 sizes[2] = 512;
+matmul_avx2.c:52:9: note: 	stmt 3 sizes[3] = 1024;
+matmul_avx2.c:52:9: note: 	children 0x7c93f98
+matmul_avx2.c:52:9: note: node (constant) 0x7c93f98 (max_nunits=1, refcnt=1) vector(4) int
+matmul_avx2.c:52:9: note: 	{ 128, 256, 512, 1024 }
+matmul_avx2.c:52:9: note: Cost model analysis: 
+matmul_avx2.c:52:9: note: Cost model analysis for part in loop 0:
+  Vector cost: 24
+  Scalar cost: 48
+matmul_avx2.c:52:9: note: Basic block will be vectorized using SLP
+matmul_avx2.c:52:9: note: Vectorizing SLP tree:
+matmul_avx2.c:52:9: note: node 0x7c93f18 (max_nunits=4, refcnt=1) vector(4) int
+matmul_avx2.c:52:9: note: op template: sizes[0] = 128;
+matmul_avx2.c:52:9: note: 	stmt 0 sizes[0] = 128;
+matmul_avx2.c:52:9: note: 	stmt 1 sizes[1] = 256;
+matmul_avx2.c:52:9: note: 	stmt 2 sizes[2] = 512;
+matmul_avx2.c:52:9: note: 	stmt 3 sizes[3] = 1024;
+matmul_avx2.c:52:9: note: 	children 0x7c93f98
+matmul_avx2.c:52:9: note: node (constant) 0x7c93f98 (max_nunits=1, refcnt=1) vector(4) int
+matmul_avx2.c:52:9: note: 	{ 128, 256, 512, 1024 }
+matmul_avx2.c:52:9: note: ------>vectorizing SLP node starting from: sizes[0] = 128;
+matmul_avx2.c:52:9: note: vect_is_simple_use: operand 256, type of def: constant
+matmul_avx2.c:52:9: note: vect_is_simple_use: operand 512, type of def: constant
+matmul_avx2.c:52:9: note: vect_is_simple_use: operand 1024, type of def: constant
+matmul_avx2.c:52:9: note: transform store. ncopies = 1
+matmul_avx2.c:52:9: note: create vector_type-pointer variable to type: vector(4) int  vectorizing a pointer ref: sizes[0]
+matmul_avx2.c:52:9: note: created &sizes[0]
+matmul_avx2.c:52:9: note: add new stmt: MEM <vector(4) int> [(int *)&sizes] = { 128, 256, 512, 1024 };
+matmul_avx2.c:52:9: note: vectorizing stmts using SLP.
+matmul_avx2.c:52:9: optimized: basic block part vectorized using 32 byte vectors
+matmul_avx2.c:52:9: note: ***** The result for vector mode V32QI would be the same
